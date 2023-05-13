@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-text-color:#000000;
+    --secondary-text-color:#577592;
+    --accent-color:#000000;
+    --accent-color-dark:#4099c9;
+    --padding-inline-section:20px
+
+}
+body{
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.5rem;
+
+}
+p{
+     font-size: 1.25rem;
+     color: var(--secondary-text-color);
+     line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+max-width: 1180px;
+margin-inline: auto;
+padding-inline: var(--padding-inline-section);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    }
+
+.hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2 ease-out;
+}
+
+.hover-links:hover{
+    color: var(--accent-color)
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2 ease-out;
+    color: white;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark)
+}
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    font-weight: 700;
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    background-color: var(--accent-color-dark)
+
+}
+
+
+.top-banner{
+    background-image: url('./assets/asset\ 30.png');
+    background-color: #ffee7d;
+    background-size:300px ;
+    
+}
+
+
+.banner-text{
+    padding: 15px 30px;
+    text-align: center;
+
+}
+
+/* nav */
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    list-style: none;
+
+}
+.main-nav input{
+    width: 46%;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 10px;
+    
+}
+.company-logo img{
+width: 100px;
+
+}
+
+
+.nav-links{
+flex-basis: 730px;
+
+}
+
+.nav-links ul{
+justify-content: end;
+list-style: none;
+gap: 50px;
+
+}
+.header{
+    padding: 50px var(--padding-inline-section);
+}
+
+.header-section{
+justify-content: center;
+gap: 50px;
+background-image: url(https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/ff300b96-b107-41d9-aaf6-51434a83b35e.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 30px;
+
+}  
+
+.header-left{
+background-color: white;
+width: 50%;
+height: 200px;
+
+
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.get-started-btn{
+    margin-top: 20px;
+    color: white;
+}
+
+.header-right img{
+    width: 700px;
+    height: 400px;
+    
+   
+}
+
+.companies-header{
+text-align: center;
+margin-block: 30px;
+color: var(--primary-text-color);
+font-size: 2rem;
+}
+
+.logoes{
+justify-content: space-between;
+
+}
+.logo{
+height: 47px;
+ flex-wrap: wrap;
+}
+.feature-section{
+    padding: 80px var(--padding-inline-section);
+   background-image: url(./assets/asset\ 32.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.features-header,.examples-header{
+    text-align: center;
+}
+.features-header h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.features-area{
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 40px;
+margin-top: 20px;
+
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px ;
+    max-width: 30% ;
+    text-align: center;
+}
+
+.big-feature-section{
+    padding: 30px var(--padding-inline-section)0;
+}
+.big-feature-container{
+    gap: 30px;
+}
+.feature-img img{
+width: 100%;
+}
+.feature-desc{
+    flex-direction:column;
+    align-items: flex-start ;
+}
+.examples-headert{
+    gap: 20px;
+}
+.examples-card{
+    width: 23%;
+    position: relative;;
+    min-height: 300px;
+    background: black;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg);
+    background-size: cover;
+    transition: 0.2s;
+
+
+}
+.examples-card:nth-child(2){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg);
+    background-size: cover;
+}
+
+.examples-card:nth-child(3){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg);
+    background-size:cover
+}
+
+.examples-card:nth-child(4){
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg);
+    background-size: cover;
+}
+
+
+.card-text{
+    position: absolute;
+    bottom: 20px ;
+    left: 20px;
+    right: 20px;
+     color: white;
+}
+.examples-area{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+.cta-section-container{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.cta-section{
+    padding: 120px var(--padding-inline-section)80px;
+    background-color: #183b54;
+}
+.cta-section-container p{
+    color: white;
+    margin-top: 20px;
+}
+.footer{
+    padding-block:80px;
+    background-color: #fbfbfb;
+    width: 100%;
+    
+}
+
+
+.links-coloum{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+    margin-top: 50px;
+} 
+.subfooter-container{
+    justify-content: center;
+    gap: 30px;
+}
